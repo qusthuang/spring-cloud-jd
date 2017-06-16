@@ -1,11 +1,4 @@
-> 很多天没有更新 由于一些事
->
-> 自己也想明白了 嘴长在别人身上 做好自己就行
->
-> 6月20 继续完善项目
 
-
----
 
 ## xbin-store-cloud
 [![License](https://img.shields.io/badge/license-GPL-blue.svg)](LICENSE)
@@ -13,7 +6,7 @@
 
 模仿国内知名B2C网站,实现的一个分布式B2C商城
 
-进群讨论 群 626068936
+
 
 ### Spring Cloud 版本:
 

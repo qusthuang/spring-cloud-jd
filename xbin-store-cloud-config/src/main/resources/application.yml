@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${eureka.serviceUrl:http://127.0.0.1:8503/eureka/}
+      defaultZone: ${eureka.serviceUrl:http://127.0.0.1:8501/eureka/}
 
 spring:
   application:
@@ -14,7 +14,7 @@ spring:
       label: master
       server:
         git:
-          uri: ${git.uri:http://admin@localhost:8078/r/config-server.git}
-          username: ${git.username:admin}
-          password: ${git.password:admin}
-          search-paths: ${git.paths:*}
+          uri: https://git.oschina.net/qusthuang/xbin-store-cloud.git
+          username: qusthuang
+          password: 198812
+          search-paths: config/*

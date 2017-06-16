@@ -5,7 +5,7 @@ buildscript {
     repositories {
         mavenLocal()
         maven{
-            url 'http://localhost:8077/nexus/content/groups/public/'
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
         }
     }
     dependencies {
@@ -58,6 +58,7 @@ configure(allprojects) { project ->
     apply plugin: "java"
     apply plugin: 'idea'
     apply plugin: 'eclipse'
+    apply plugin: 'application'
 
     if (!(name.contains('common'))) {
         apply plugin: 'org.springframework.boot'
@@ -65,7 +66,8 @@ configure(allprojects) { project ->
     apply plugin: 'docker'
 
     repositories {
-        maven { url "http://localhost:8077/nexus/content/groups/public/" }
+        mavenLocal()
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
     }
 
     dependencies {

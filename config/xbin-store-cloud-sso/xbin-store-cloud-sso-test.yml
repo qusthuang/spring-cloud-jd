@@ -12,7 +12,7 @@ druid:
     url: jdbc:mysql://219.230.50.73:3306/xbin_store?characterEncoding=utf-8
     driver-class: com.mysql.jdbc.Driver
     username: root
-    password: OZo+t9QET+ctzd5Esn9q0GJP5hXtWWIKEsX8c4/w6z4C4AnxrwpvySNgBS89XdazOavjXXZp0oeZtQ3P9lLGEA==
+    password: Biyu5YzU+6sxDRbmWEa3B2uUcImzDo0BuXjTlL505+/pTb+/0Oqd3ou1R6J8+9Fy3CYrM18nBDqf6wAaPgUGOg==
     initial-size: 1
     min-idle: 1
     max-active: 20
@@ -77,7 +77,7 @@ redisKey:
 # REDIS (RedisProperties)
 redis:
   cluster: false
-  single-host: 219.230.50.94
+  single-host: 101.200.222.78
   single-port: 6379
-  password:
+  password: Ks7nr8TBMpmvhTz
 # ------------------------------------------------------------------------------------------------------------------------------------------------
