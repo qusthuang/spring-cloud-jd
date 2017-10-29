@@ -41,6 +41,7 @@ pagehelper:
 # swagger2
 swagger2.package: cn.binux.sso.service
 
+
 # Redis
 redisKey:
   # 缓存时间 默认半小时

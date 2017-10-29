@@ -17,3 +17,16 @@ redisKey:
   prefix:
     # 用户登录信息前缀
     user_session: 'USER_SESSION:'
+# To disable Hystrix in Feign
+feign:
+  hystrix:
+    enabled: true
+
+# To set thread isolation to SEMAPHORE
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 500009

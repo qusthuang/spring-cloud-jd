@@ -54,7 +54,7 @@ spring:
     password: guest
   data:
       solr:
-        host: http://182.92.218.12:8080/solr/collection1
+        host: http://http://121.40.219.112/solr/ins
         #zkHost:
         repositories:
           enabled: false

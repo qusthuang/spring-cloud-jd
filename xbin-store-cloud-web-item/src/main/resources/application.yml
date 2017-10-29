@@ -12,3 +12,16 @@ spring:
 # swagger2
 swagger2.package: cn.binux.item.controller
 
+# To disable Hystrix in Feign
+feign:
+  hystrix:
+    enabled: true
+
+# To set thread isolation to SEMAPHORE
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 500009

@@ -1,4 +1,4 @@
-druid:
+﻿druid:
     url: jdbc:mysql://localhost:3306/xbin_store?characterEncoding=utf-8
     driver-class: com.mysql.jdbc.Driver
     username: root
@@ -49,3 +49,16 @@ redisKey:
     cart_order_info_profix: 'CART_ORDER_INFO:'
     cart_order_index_profix: 'CART_ORDER_INDEX:'
 
+# To disable Hystrix in Feign
+feign:
+  hystrix:
+    enabled: false
+
+# To set thread isolation to SEMAPHORE
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 500009

@@ -125,7 +125,7 @@ public class SearchServiceImpl implements SearchService {
         query.setRows(rows);
 
         //设置默认搜素域
-        query.set("df", "item_keywords");
+        query.set("df", "item_title");
 
         query.setHighlight(true);
 
@@ -168,7 +168,7 @@ public class SearchServiceImpl implements SearchService {
             solrItem.setImage((String) result.get("item_image"));
             solrItem.setSell_point((String) result.get("item_sell_point"));
             solrItem.setItem_desc((String) result.get("item_desc"));
-            solrItem.setPrice((Long) result.get("item_price"));
+            solrItem.setPrice(Long.valueOf(result.get("item_price").toString()));
 
             solrItems.add(solrItem);
 

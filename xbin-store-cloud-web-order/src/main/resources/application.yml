@@ -1,4 +1,4 @@
-#配置模板想到classpath路径，后面须加上"/"
+﻿#配置模板想到classpath路径，后面须加上"/"
 beetl:
   templates-path: templates/
   config:
@@ -25,3 +25,16 @@ redisKey:
 
 #SSO 系统登录页面
 sso_login_page: 'http://localhost:8104/login.html'
+# To disable Hystrix in Feign
+feign:
+  hystrix:
+    enabled: false
+
+# To set thread isolation to SEMAPHORE
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 500009

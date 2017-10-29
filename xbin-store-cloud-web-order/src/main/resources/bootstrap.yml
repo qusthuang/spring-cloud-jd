@@ -31,15 +31,9 @@ eureka:
     serviceUrl:
       defaultZone: ${eureka.serviceUrl:http://127.0.0.1:8501/eureka/}
 
-feign:
-  hystrix:
-    enabled: true
-
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000
-
 # REDIS (RedisProperties)
 redis:
   cluster: false
-  single-host: 101.200.222.78
+  single-host: 121.40.219.112
   single-port: 6379
-  password: Ks7nr8TBMpmvhTz
+  password: cq123

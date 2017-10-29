@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
  */
 
 @Component
-public class UserServiceHystrix implements UserService {
+public class UserServiceHystrix implements UserService{
 
     /**
      * 请求格式 POST
@@ -26,7 +26,6 @@ public class UserServiceHystrix implements UserService {
      * data: "fe5cb546aeb3ce1bf37abcb08a40493e" //登录成功，返回token
      * }
      */
-    @Override
     public XbinResult login(TbUser user) {
         return null;
     }
@@ -43,7 +42,6 @@ public class UserServiceHystrix implements UserService {
      * data: {"username":"xbin"} //返回用户名
      * }
      */
-    @Override
     public XbinResult token(String token, String callback) {
         return null;
     }
@@ -60,7 +58,6 @@ public class UserServiceHystrix implements UserService {
      * data: null
      * }
      */
-    @Override
     public XbinResult logout(String token, String callback) {
         return null;
     }
@@ -77,7 +74,6 @@ public class UserServiceHystrix implements UserService {
      *                  "morePin":["sssss740","sssss5601","sssss76676"] //isEngaged = isPinEngaged时返回推荐
      *                  }
      */
-    @Override
     public String validateUser(String isEngaged, String regName, String email, String phone) {
         return null;
     }
@@ -92,7 +88,6 @@ public class UserServiceHystrix implements UserService {
      * "success": 0 可用 1 不可用
      * }
      */
-    @Override
     public String validateAuthCode(String authCode, String uuid) {
         return null;
     }
@@ -111,7 +106,6 @@ public class UserServiceHystrix implements UserService {
      * @param s
      * @return
      */
-    @Override
     public String register(String regName, String pwd, String pwdRepeat, String phone, String mobileCode, String uuid, String authCode, String s) {
         return null;
     }

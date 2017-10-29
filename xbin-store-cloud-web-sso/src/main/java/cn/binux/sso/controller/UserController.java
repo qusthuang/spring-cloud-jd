@@ -6,6 +6,9 @@ import cn.binux.pojo.TbUser;
 import cn.binux.pojo.XbinResult;
 import cn.binux.sso.service.UserService;
 import cn.binux.utils.CookieUtils;
+import com.netflix.hystrix.HystrixCircuitBreaker;
+import com.netflix.hystrix.HystrixInvokable;
+import com.netflix.hystrix.HystrixInvokableInfo;
 import io.swagger.annotations.Api;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -73,7 +76,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/user/login", method = RequestMethod.POST)
-    public @ResponseBody String login(TbUser user, String returnUrl, HttpServletResponse response, HttpServletRequest request) {
+    public @ResponseBody String login(TbUser user,  String returnUrl, HttpServletResponse response, HttpServletRequest request) {
 
         XbinResult result = userService.login(user);
 

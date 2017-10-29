@@ -40,7 +40,7 @@ public class LoginInterceptor implements HandlerInterceptor {
         String url = httpServletRequest.getRequestURL().toString();
 
         if (url.contains("getOrderInfo")) {
-            url = "http://localhost:8107/cart";
+            url = "http://localhost:8106/cart";
         }
 
         if (StringUtils.isBlank(cookieValue)) {

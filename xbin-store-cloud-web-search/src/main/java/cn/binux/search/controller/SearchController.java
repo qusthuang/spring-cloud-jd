@@ -65,4 +65,13 @@ public class SearchController {
         return "search";
 
     }
+
+    @RequestMapping(value = "/importAllItems", method = RequestMethod.GET)
+    public String search() {
+
+        searchService.importAllItems();
+
+        return "search";
+
+    }
 }

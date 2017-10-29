@@ -14,3 +14,16 @@ spring:
 
 ## Search Rows
 search_result_rows: 60
+# To disable Hystrix in Feign
+feign:
+  hystrix:
+    enabled: true
+
+# To set thread isolation to SEMAPHORE
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 500009

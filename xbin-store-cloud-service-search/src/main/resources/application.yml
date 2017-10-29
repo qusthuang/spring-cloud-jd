@@ -29,7 +29,7 @@ druid:
           reset-enable: false
 mybatis:
     type-aliases-package: cn.binux.pojo
-    mapper-locations: classpath:cn.binux.mapper/*.xml
+    mapper-locations: classpath:cn.binux.search.mapper/*.xml
 
 
 pagehelper:

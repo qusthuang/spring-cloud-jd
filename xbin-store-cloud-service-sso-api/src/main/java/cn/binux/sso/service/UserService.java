@@ -3,6 +3,7 @@ package cn.binux.sso.service;
 import cn.binux.pojo.TbUser;
 import cn.binux.pojo.XbinResult;
 import cn.binux.sso.service.hystrix.UserServiceHystrix;
+import com.netflix.hystrix.strategy.properties.HystrixPropertiesCommandDefault;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @create 2017-05-05
  */
 
-@FeignClient(value = "xbin-store-cloud-service-sso",fallback = UserServiceHystrix.class)
+@FeignClient(value = "xbin-store-cloud-service-sso",configuration = StoreFeignConfig.class,fallback = UserServiceHystrix.class)
 public interface UserService {
 
     /**
