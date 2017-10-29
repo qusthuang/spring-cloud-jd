@@ -26,7 +26,7 @@ public class IndexController {
     private long Big_AD_INDEX;
 
 
-    @RequestMapping("/index")
+    @RequestMapping("/")
     public String index(Model model) {
 
 
