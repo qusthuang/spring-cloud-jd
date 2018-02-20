@@ -8,7 +8,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${eureka.serviceUrl:http://127.0.0.1:8501/eureka/}
+      defaultZone: ${eureka.serviceUrl:http://eureka.server:8501/eureka/}
   instance:
     hostname: ${hostname:admin}
     prefer-ip-address: true
@@ -25,7 +25,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${eureka.serviceUrl:http://127.0.0.1:8501/eureka/}
+      defaultZone: ${eureka.serviceUrl:http://eureka.server:8501/eureka/}
   instance:
     hostname: ${hostname:admin}
     prefer-ip-address: true

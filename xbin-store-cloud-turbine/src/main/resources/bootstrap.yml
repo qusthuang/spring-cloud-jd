@@ -26,10 +26,10 @@ management:
 
 eureka:
   instance:
-    status-page-url: http://localhost:${server.port}/hystrix
+    status-page-url: http://eureka.server:${server.port}/hystrix
   client:
     serviceUrl:
-      defaultZone: ${eureka.serviceUrl:http://127.0.0.1:8501/eureka/}
+      defaultZone: ${eureka.serviceUrl:http://eureka.server:8501/eureka/}
 
 turbine:
   aggregator:
